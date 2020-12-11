@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button id="logout">Logout</button>
+        <h1>Grocery list</h1>
+        <div id="userSection" style="display: none;">
+            <form class="userForm">
+                <input type="text" class="inputType" id="userName" placeholder="Please enter user name"><br><br>
+                <button type="submit" class="button" id="userNameButton">Submit</button>
+            </form>
+        </div>
+        <div id="listSection" style="display: none;">
+            <form class="groceryItemForm">
+                <input type="text" class="groceryItemInput inputType" placeholder="Add a Item"><br><br>
+                <button type="submit" class="addButton button">Add</button>
+            </form>
+            <ul id="listItem">
+            </ul>
+        </div>
+        <div id="editSection" style="display: none;">
+            <form class="editItemForm">
+                <input type="text" class="itemValue inputType" placeholder="Add a Item">
+                <input type="hidden" class="itemId">
+                <button type="submit" class="editItemButton button">Save</button>
+            </form>
+            <ul id="listItem">
+            </ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
